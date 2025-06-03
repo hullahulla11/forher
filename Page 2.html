@@ -138,6 +138,34 @@
   </div>
   <div class="text">Also if you date me , I will make sure to pamper you with handwritten letters, arm bites, hand holdings, icecreams and forhead kisses for no extra costs.</div>
   </div>
+  
+  <div class="center-rose">
+    <img src="https://github.com/hullahulla11/forher/blob/4b856eb947fda163526950ebcc8f3ed0be840c8d/rose(bend%20down).png" alt="Bending Rose" />
+    <p>So miss gorgeous, will you like to be the pretty woman and I mean the pretty woman who is willing to go on a date with me ? I assure you an upgraded and loving experience </p>
+  </div>
+
+  <form id="decisionForm">
+    <label><input type="radio" name="decision" value="yes" /> Yes</label>
+    <label><input type="radio" name="decision" value="no" /> No</label>
+    <label><input type="radio" name="decision" value="think" /> Think</label>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('decisionForm');
+  form.addEventListener('change', e => {
+    if(e.target.value === 'yes') {
+      alert('You chose Yes! Redirecting to the next surprise...');
+      window.location.href = 'Page 4.html';
+    } else if(e.target.value === 'no') {
+      alert('Oh no! Maybe next time. Sending you my best wishes.');
+      
+    } else if(e.target.value === 'think') {
+      alert('Take your time. I will be here waiting patiently.');
+      // Could add some other logic if needed
+    }
+  });
+</script>
 
  
 
